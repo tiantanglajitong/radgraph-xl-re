@@ -1,0 +1,40 @@
+# Local environment and credentials
+.env
+.venv/
+venv/
+
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+*.egg-info/
+build/
+dist/
+
+# Restricted RadGraph data and archives
+data/
+*.zip
+*.jsonl
+
+# Model artifacts and experiment outputs
+models/
+checkpoints/
+outputs/
+artifacts/
+runs/
+*.bin
+*.pt
+*.pth
+*.safetensors
+
+# Notebook transient files
+.ipynb_checkpoints/
+
+# Editors and operating system files
+.DS_Store
+Thumbs.db
+
