@@ -16,6 +16,15 @@
       "problemMatcher": []
     },
     {
+      "label": "Python: Check ML environment",
+      "type": "shell",
+      "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+      "args": [
+        "scripts\\check_environment.py"
+      ],
+      "problemMatcher": []
+    },
+    {
       "label": "RadGraph RE: Project info",
       "type": "shell",
       "command": "${workspaceFolder}\\.venv\\Scripts\\python.exe",

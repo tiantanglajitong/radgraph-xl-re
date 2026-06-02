@@ -6,6 +6,7 @@ venv/
 # Python caches and tooling
 __pycache__/
 *.py[cod]
+.cache/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
@@ -26,6 +27,8 @@ checkpoints/
 outputs/
 artifacts/
 runs/
+wandb/
+tensorboard/
 *.bin
 *.pt
 *.pth
