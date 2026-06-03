@@ -10,8 +10,8 @@ this repository and never commit reports, extracted JSONL files, model outputs,
 or notebook cells containing report text.
 
 Copy `.env.example` to `.env` and update `RADGRAPH_XL_ZIP` if the local archive
-path changes. `.env`, archives, JSONL files, model weights, and experiment
-outputs are ignored by Git.
+path changes. `.env`, archives, JSONL files, model weights, experiment outputs,
+and generated figures are ignored by Git.
 
 ## VS Code setup
 
@@ -52,10 +52,36 @@ Run the checks:
 Open `test.ipynb` in VS Code to rerun the package import, GPU detection, and
 CUDA matrix multiplication checks interactively.
 
-The same checks are available in VS Code through `Terminal > Run Task`.
+## Notebook workflow
+
+Use these notebooks for the current data-preparation phase:
+
+```text
+notebooks\01_data_audit.ipynb
+notebooks\02_data_visualization.ipynb
+```
+
+`01_data_audit.ipynb` reads the external RadGraph-XL ZIP, checks the JSONL
+structure, and writes aggregate outputs:
+
+```text
+outputs\audit\data_audit.json
+outputs\audit\report_summary.csv
+```
+
+`02_data_visualization.ipynb` generates aggregate figures under:
+
+```text
+outputs\figures\
+```
+
+The notebooks are designed to show only aggregate counts, labels, and
+distributions. They must not display or save report text.
 
 ## Current scope
 
-This commit configures the local development and ML environment. Dataset audit,
-NER training, relation extraction, evaluation, and graph export commands will be
-added in the implementation phase.
+The project currently supports local environment verification, notebook-based
+RadGraph-XL data audit, and non-sensitive visualization. Dataset splits, NER
+training, relation extraction, evaluation, and graph export will be added in
+later implementation phases.
+
