@@ -18,7 +18,9 @@ dist/
 
 # Restricted RadGraph data and archives
 data/
+RadGraphXL/
 *.zip
+*.rar
 *.jsonl
 
 # Model artifacts and experiment outputs
@@ -26,6 +28,7 @@ models/
 checkpoints/
 outputs/
 artifacts/
+paper_results_backup/
 runs/
 wandb/
 tensorboard/
@@ -37,7 +40,9 @@ tensorboard/
 # Notebook transient files
 .ipynb_checkpoints/
 
+# Superseded local RE notebook; v2 is the maintained implementation
+notebooks/05_train_re_transformer.ipynb
+
 # Editors and operating system files
 .DS_Store
 Thumbs.db
-
