@@ -32,10 +32,10 @@ RADGRAPH_XL_RUN_NAME
 
 ### Dataset acknowledgement and citation
 
-RadGraph-XL was created by Delbrouck et al. and released by
-[@Stanford-AIMI](https://github.com/Stanford-AIMI) for research on clinical
-entity and relation extraction. This repository contains an independent
-experimental pipeline and does not redistribute any RadGraph-XL records.
+RadGraph-XL was created by Delbrouck et al. and released by @Stanford-AIMI for
+research on clinical entity and relation extraction. This repository contains
+an independent experimental pipeline and does not redistribute any RadGraph-XL
+records.
 
 Researchers should obtain the data through the authorised release channels,
 accept the applicable data-use terms, and cite both the dataset paper and the
